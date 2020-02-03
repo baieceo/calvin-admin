@@ -1,0 +1,115 @@
+.resources {
+	&-list, &-item {
+		padding: 0;
+		margin: 0;
+		list-style: none;
+	}
+
+	&-list {
+		zoom: 1;
+		min-height: 300px;
+
+		&::after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+	}
+
+	&-item {
+		float: left;
+		width: 150px;
+		text-align: center;
+		margin-right: 20px;
+		margin-bottom: 20px;
+		cursor: pointer;
+
+		i {
+			display: block;
+			font-size: 60px;
+		}
+	}
+
+	&-title {
+		word-break: break-all;
+		display: -webkit-box;
+		-webkit-box-orient: vertical;
+		-webkit-line-clamp: 1;
+		overflow: hidden;
+		color: #666;
+	}
+
+	&-image {
+		width: 60px;
+		height: 60px;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-position: center center;
+		display: inline-block;
+		border: 1px solid #f5f5f5;
+		border-radius: 5px;
+		overflow: hidden;
+	}
+
+	&-thumb {
+		color: #666;
+	}
+
+	&-actions {
+		padding: .5em 0;
+
+		.link {
+			padding: 0 0;
+		}
+	}
+
+	.tips {
+		width: 100%;
+		height: 300px;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: #999;
+	}
+
+	&-nav {
+		padding: 10px 20px;
+		margin-bottom: 20px;
+		color: #999;
+		background: #f4f4f5;
+		border-radius: 5px;
+
+		&-list, &-item {
+			margin: 0;
+			padding: 0;
+		}
+
+		&-list {
+			zoom: 1;
+			list-style: none;
+
+			&::after {
+				content: '';
+				display: block;
+				clear: both;
+			}
+		}
+
+
+		&-item {
+			float: left;
+			cursor: pointer;
+		}
+
+		span {
+			padding: 0 5px;
+		}
+
+		.text {
+			&:hover {
+				color: #409eff;
+			}
+		}
+	}
+}

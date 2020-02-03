@@ -1,0 +1,23 @@
+$prefix: 'aui-descriptions-item';
+
+.#{$prefix} {
+  &-title {
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.85);
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  &-view {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 4px;
+  }
+
+  &-bordered {
+    .#{$prefix}-view {
+      border: 1px solid #e8e8e8;
+    }
+  }
+}

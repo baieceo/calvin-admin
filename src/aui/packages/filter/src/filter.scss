@@ -1,0 +1,26 @@
+.aui-filter {
+  padding: 20px 12px;
+
+  &-form-inline {
+    margin-bottom: -22px;
+  }
+
+  &-wrapper {
+    display: flex;
+  }
+
+  &-form {
+    flex: 1;
+    padding-right: 20px;
+  }
+
+  .el-input,
+  .el-select {
+    min-width: 220px;
+  }
+
+  /* &-side {
+        display: flex;
+        align-items: center;
+    } */
+}
